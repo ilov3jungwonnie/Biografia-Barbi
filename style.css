@@ -56,8 +56,7 @@ body {
 background-image: url('https://www.glitter-graphics.com/images/t/b/100x100/2856/2856418tig64ck9y3.webp');
 background-attachment: fixed;
 background-repeat: repeat;
-overflow-x: hidden;
-overflow-y: auto;
+overflow: hidden;
 }
 div.song {
 position: fixed;
@@ -73,17 +72,15 @@ animation-name:bounce;
 transform-origin:center bottom;
 }
 .container{
-  border-width: 7px; 
+border-width: 7px; 
 border-style: solid; 
 border-image: url("https://i.imgur.com/ROjUrNz.gif") 6 fill round;          
 margin: auto;
 position: relative;
 padding: 5px;
 z-index: 4;
-width:95%;
-max-width:884px;
-min-height:665px;
-height:auto;
+width:884px;
+height:665px;
 }
 .container-one{
   border-width: 1px;
