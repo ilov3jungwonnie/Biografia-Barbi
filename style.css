@@ -332,5 +332,35 @@ footer{
 .navi button:active{
     transform: scale(0.96);
 }
+@media (max-width: 768px) {
 
+    body {
+        padding: 10px;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
