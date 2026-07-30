@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Familia -`♡´-</title>
+<link rel="icon" href="https://i.imgur.com/y62jLC0.gif">
+<link rel="stylesheet" href="familia.css">
+</head>
+<main>
+<body>
+<div class="galeria">
+<!-- Primera -->
+<figure class="blurfilter blurrotate">
+    <img src="https://secretmmm.carrd.co/assets/images/image06.jpg?v=6d5317d3">
+    <figcaption>
+    La mamá de la Barbi se llama Mami, tiene entre 40 y 50, nacio como mujer en una clinica en Punta Arenas, estudio odontología en Temuco, se mudo con su primer marido como a los 20 a Copiapo, y despues tuvo a la Barbi.  
+    </figcaption>
+</figure>
+<!-- Segunda -->
+<figure class="blurfilter slidey">
+    <img src="https://secretmmm.carrd.co/assets/images/image05.jpg?v=6d5317d3">
+    <figcaption>
+    El papá de la Barbi es presente.
+    </figcaption>
+</figure>
+
+<!-- Tercera -->
+<figure class="blurfilter slideup">
+    <img src="https://secretmmm.carrd.co/assets/images/image07.jpg?v=6d5317d3" onclick="abrirPopup()" >
+    <figcaption>
+    El perro de la Barbi es un Schnauzer (raza aria) nacido el 4 de noviembre de 2016 en un criadero de Buin, era uno de 8 nacidos de la sexta camada de su madre, su padre o su abuelo (no tengo ni idea)era campeón pedegri y era muy bacan, de ahi fue trasladado a el mall parque aruco y de ahi fue comprado por una muy linda familia, en verdad era la segunda opción pero la Barbi es racista y no le gustaba el perro negro. Es un perro muy bonito y vive con la Barbi y es muy feliz.
+    </figcaption>
+</figure>
+</div>
+<div class="volver">
+    <a href="barbi.html" target="_blank">
+        <button>Menu</button> 
+    </a>
+</div>
+<footer>by Matilda</footer>
+<div class="song">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<center>
+<audio id="audio" src="Dried Flowers.mp3"></audio>
+<img id="img" src="https://www.glitter-graphics.com/images/t/b/100x100/318/318450hx6d5u84h5.webp" width=auto height=auto class="animate__animated">
+</center>
+<script>
+document.getElementById("img").addEventListener("click", function(){
+document.getElementById("audio").play();
+});
+</script>
+<div id="popup" class="popup">
+    <div class="popup-contenido">
+        <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+        <video controls width="350px">
+          <source src="Miniature Schnauzer Bark.mp4">
+        </video>
+    </div>
+</div>
+
+<script>
+function abrirPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function cerrarPopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const popup = document.getElementById("popup");
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</main>
+</html>

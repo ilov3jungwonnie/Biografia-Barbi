@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="https://i.imgur.com/lxvkbj9.gif">
+<title>Gustos ᯓ★</title>
+<link rel="stylesheet" href="gustos.css">
+</head>
+<main>
+<body>
+
+<div class="cards">
+
+    <div class="card">
+        <img src="https://secretmmm.carrd.co/assets/images/image08.jpg?v=884b899e" onclick="abrirPopup()">
+        <div class="lovely">Makoto Yuki!</div>
+        <div class="scroll">
+            info
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://secretmmm.carrd.co/assets/images/image10.jpg?v=71ee6bf9">
+        <div class="lovely">Snoopy!</div>
+        <div class="scroll">
+            info
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://secretmmm.carrd.co/assets/images/image09.jpg?v=4570fab1">
+        <div class="lovely">Helioptile !</div>
+        <div class="scroll">
+            info
+        </div>
+    </div>
+    </div>
+<div class="volver">
+    <a href="barbi.html" target="_blank">
+        <button>Menu</button> 
+    </a>
+</div>
+  <div class="song">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<center>
+<audio id="audio" src="Dried Flowers.mp3"></audio>
+<img id="img" src="https://www.glitter-graphics.com/images/t/b/100x100/318/318450hx6d5u84h5.webp" width=auto height=auto class="animate__animated">
+</center>
+<script>
+document.getElementById("img").addEventListener("click", function(){
+document.getElementById("audio").play();
+});
+</script>
+</div>
+<div id="popup" class="popup">
+    <div class="popup-contenido">
+        <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+        <video controls width="350px">
+          <source src="makoto yuki at your door telling you to play P3R (asmr roleplay)  Persona 3 Reload.mp4">
+        </video>
+    </div>
+</div>
+
+<script>
+function abrirPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function cerrarPopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const popup = document.getElementById("popup");
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+</script>
+<footer>by Matilda</footer>
+</body>
+</main>
+</html>

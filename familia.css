@@ -1,0 +1,220 @@
+@font-face {
+font-family: pixel;
+src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
+}
+@font-face {
+font-family: starborn;
+src: url(https://dl.dropbox.com/s/l0541on0m5eqvdj/Starborn.ttf);
+}
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/cute-hello-kitty-4-91cfac11-32.webp') 32 32, auto !important;
+}
+body{
+    margin: 80px;
+    padding: 10px;
+    background-image: url('https://www.glitter-graphics.com/images/t/b/100x100/3730/3730871ef5gmxuw07.webp'); 
+    background-attachment: fixed;
+    background-repeat: repeat;
+    justify-content: center;
+}
+::selection {
+background: #f7abcf;
+color: #b94aa4;
+}
+html {
+overflow: scroll;
+overflow-x: hidden;
+}
+::-webkit-scrollbar {
+width: 0; 
+background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+background: transparent;
+}
+a {text-decoration: none; color: rgb(246, 165, 217); }
+.galeria{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+figure.blurfilter{
+    margin:0;
+    padding:0;
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+}
+
+figure.blurfilter img{
+    display:block;
+    width:250px;
+    height:auto;
+    transition:all .4s .4s;
+}
+
+figure.blurfilter figcaption{
+    position:absolute;
+    box-sizing:border-box;
+    background:white;
+    padding:10px;
+    z-index:100;
+    width:90%;
+    height:90%;
+    top:5%;
+    left:5%;
+    font-family: pixel;
+    font-size:16px;
+    text-align:left;
+    overflow-y:auto;
+    opacity:0;
+    transition:all .4s;
+}
+
+figure.blurfilter:hover img{
+    filter:blur(5px);
+    transform:scale(1.3);
+    transition:.4s;
+}
+
+figure.blurfilter:hover figcaption{
+    opacity:1;
+    transition:all .4s .4s;
+}
+
+/* Animación 1 */
+.blurrotate figcaption{
+    transform:rotate(10deg);
+}
+
+.blurrotate:hover figcaption{
+    transform:rotate(0deg);
+}
+
+/* Animación 2 */
+.slidey figcaption{
+    transform:rotateY(90deg);
+}
+
+.slidey:hover figcaption{
+    transform:rotateY(0deg);
+}
+
+/* Animación 3 */
+.slideup figcaption{
+    transform:translateY(100%);
+}
+
+.slideup:hover figcaption{
+    transform:translateY(0);
+}
+.volver{
+    text-align:center;
+    margin:40px 0;
+}
+
+.volver button{
+    background-image: url('https://secretmmm.carrd.co/assets/images/image03.jpg?v=680ff649');
+    color:rgb(246, 53, 188);
+    border: 2px solid rgb(255, 156, 222);
+    padding:10px 25px;
+    border-radius:20px;
+    font-size:16px;
+    transition:.3s;
+    font-family: pixel;
+}
+
+.volver button:hover{
+    background:#f9bfda;
+}
+div.song {
+position: fixed;
+bottom: 0;
+left: 0;
+width: auto;
+}
+#img:hover,
+#img:focus{
+-webkit-animation-name:bounce;
+animation-name:bounce;
+-webkit-transform-origin:center bottom;
+transform-origin:center bottom;
+}
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-contenido{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    width:350px;
+    position:relative;
+    border:3px solid hotpink;
+}
+
+.cerrar{
+    position:absolute;
+    right:15px;
+    top:8px;
+    font-size:30px;
+}
+footer{
+  text-align: center;
+  font-family: starborn;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: #efa7d2;
+}
+.galeria figure{
+    box-shadow:
+        0 0 8px #ffb6df,
+        0 0 18px rgba(255,182,223,.6),
+        5px 5px 10px rgba(0,0,0,.25);
+}
+
+.galeria figure img{
+    box-shadow:
+        0 0 5px white,
+        0 0 10px #ffc8e8,
+        2px 2px 8px rgba(0,0,0,.25);
+}
+.volver button{
+    box-shadow:
+        0 0 8px #ffc8e8,
+        0 0 15px #ff9ed8,
+        3px 3px 6px rgba(0,0,0,.2);
+}
+.galeria figure,
+.galeria figure img,
+.volver button{
+    transition: all .3s ease;
+}
+.galeria figure:hover{
+    transform: translateY(-8px) rotate(-2deg);
+    box-shadow:
+        0 0 15px #ff9ed8,
+        0 0 30px #ffd6ef,
+        8px 8px 15px rgba(0,0,0,.25);
+}
+.volver button:hover{
+    transform: scale(1.08);
+    background: #ffd6ef;
+    color: #ff4fb2;
+    border-color: #ff9ed8;
+    box-shadow:
+        0 0 10px #ffb6df,
+        0 0 20px #ff9ed8,
+        0 0 30px #ffd6ef;
+}
