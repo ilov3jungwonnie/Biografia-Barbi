@@ -28,7 +28,7 @@ body{
     overflow-x:hidden;
 }
 
-/* Título */
+
 
 h1{
     font-family:starborn;
@@ -39,7 +39,7 @@ h1{
     text-shadow:2px 2px black;
 }
 
-/* Contenedor */
+
 
 .contenedor{
     width:900px;
@@ -50,7 +50,7 @@ h1{
     gap:30px;
 }
 
-/* Tarjetas */
+
 
 .tarjeta{
     width:250px;
@@ -75,9 +75,6 @@ h1{
     0 0 30px #ffd6ef,
     0 0 40px white;
 }
-
-/* Iconos */
-
 .icono{
     width:70px;
     margin-bottom:10px;
@@ -88,7 +85,7 @@ h1{
     transform:rotate(-10deg) scale(1.15);
 }
 
-/* Texto */
+
 
 h2{
     font-family:starborn;
@@ -103,7 +100,7 @@ p{
     line-height:1.4em;
 }
 
-/* Botones */
+
 
 button{
     width:180px;
@@ -134,7 +131,7 @@ button:hover{
     background:#ffe4f4;
 }
 
-/* Decoraciones */
+
 
 .decor{
     position:absolute;
@@ -169,7 +166,7 @@ button:hover{
     bottom:80px;
 }
 
-/* Música */
+
 
 .song{
     position:fixed;
@@ -185,17 +182,17 @@ button:hover{
     transform:scale(1.15) rotate(-10deg);
 }
 
-/* Menú */
+
 
 .volver{
     margin:30px;
 }
 
-/* Footer */
+
 
 footer{
     font-family:starborn;
-    color:#ff9ed8;
-    -webkit-text-stroke:1px black;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: #efa7d2;
     margin-bottom:20px;
 }
