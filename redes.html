@@ -52,6 +52,31 @@
     </div>
 
 </div>
+<div id="popup" class="popup">
+    <div class="popup-contenido">
+        <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+        <video controls width="350px">
+          <source src="Vanessa Hudgens - Sneakernight (Official Video).mp4">
+        </video>
+    </div>
+</div>
+
+<script>
+function abrirPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function cerrarPopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const popup = document.getElementById("popup");
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+</script>
 <div class="volver">
     <a href="index.html" target="_blank">
         <button>Menu</button>
