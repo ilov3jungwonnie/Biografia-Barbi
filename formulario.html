@@ -64,7 +64,17 @@
         <button type="button">Menu</button>
     </a>
 </div>
-
+<div class="song">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<center>
+<audio id="audio" src="Dried Flowers.mp3"></audio>
+<img id="img" src="https://www.glitter-graphics.com/images/t/b/100x100/318/318450hx6d5u84h5.webp" width=auto height=auto class="animate__animated">
+</center>
+<script>
+document.getElementById("img").addEventListener("click", function(){
+document.getElementById("audio").play();
+});
+</script>
 <footer>by Matilda</footer>
 
 </body>
